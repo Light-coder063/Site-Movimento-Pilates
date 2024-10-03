@@ -1,0 +1,361 @@
+body{
+    margin: 0;
+    display: flex;         /* Adiciona Flexbox ao body */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    min-height: 100vh;
+}
+main{
+    flex:1;
+}
+#navbar{
+    background-color: rgb(73, 158, 138);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    padding: 0;
+}
+.click{
+    float: left;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logo{
+    margin-left: 90px;
+}
+#click1{
+    margin-left: 275px;
+    color: white;
+    font-size: 1.3em;
+}
+#click2{
+    margin-left: 30px;
+    color: white;
+    font-size: 1.3em;
+}
+#click3{
+    margin-left: 30px;
+    color: white;
+    font-size: 1.3em;
+}
+#vaga{
+    background-color: rgb(8, 88, 86);
+    width: 110%;
+    height: 50px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#vaga:visited{
+    color: white !important;
+}
+#navbar a:hover{
+    color: rgb(213, 213, 213);
+}
+#botao1:hover{
+    background-color: rgb(7, 78, 76);
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.207);
+}
+#botao2:hover{
+    background-color: white;
+    color: black;
+}
+#vaga:hover{
+    background-color: rgb(7, 78, 76);
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.207);
+}
+#backimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 715px;
+    position: relative;
+}
+#backimage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Preto com 50% de opacidade */
+    z-index: 1; /* Coloca a camada acima da imagem */
+}
+#backimage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Images/Fundo2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(0.5px); 
+    z-index: 1;
+}
+#firstText{
+    max-width: 100%;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 9;
+    font-size: 2em;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+#text {
+    max-width: 75%;
+    margin-top: -60px;
+    display: inline-block;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#Ibotao{
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.botao{
+    float: left;
+    text-decoration: none;
+    width: 280px;
+    color: white;
+    height: 50px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#botao1{
+    background-color:rgb(8, 88, 86);
+}
+#botao2{
+    margin-left: 30px;
+    border: solid 3px white;
+}
+#backimage2{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(Images/8760131.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+#beneficios{
+    width: 100%;
+}
+#tituloPrincipio{
+    font-size: 1.4em;
+    margin-top: 80px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    color:rgb(25, 91, 12);
+}
+#tituloPrincipio h3{
+    color: rgba(48, 118, 30);
+}
+#num{
+    font-size:1.1em;
+}
+.principio{
+    float: left;
+    display: flow-root;
+    font-size: 3.5em;
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(92, 185, 69, 0.685);
+    text-align: center;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: -60px;
+}
+.nomePrincipio{
+    font-size: 0.35em;
+    color: rgb(25, 91, 12);
+    margin-top: -40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.beneficio{
+    font-size: 0.27em;
+    color: rgba(48, 118, 30);
+    margin-top: -20px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#listaPrincipio{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloFotos{
+    height: 300px;
+    display: flex;
+    flex-direction: column; /* Para alinhar os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    background-color: rgba(105, 220, 193, 0.444);
+    color: rgb(38, 116, 97);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#tituloFotos h1{
+}
+#tituloFotos h2{
+    color: rgba(49, 125, 106, 0.867);
+}
+#fotos ol{
+    margin: 0;
+}
+.foto{
+    width: 27.84%;
+    height: 500px;
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-left: -41px;
+}
+.foto:hover::after{
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position:absolute;
+    background-color: rgb(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+.foto:active{
+
+}
+#biografia{
+    background-color: rgba(105, 220, 193, 0.581);
+    height: 630px;
+    overflow: hidden;
+    display: flex;
+    clear: both; /*para não aplicar float*/
+    color: rgb(38, 116, 97);
+}
+#biografia img{
+    width: 400px;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 100px;
+    float: left;
+}
+#textoBiografia{
+    font-size: 1.2em;
+    margin-top: 40px;
+    max-width: 500px;
+}
+#paragrafo1{
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: bold;
+    font-size: 0.86em;
+}
+#paragrafo2{
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: bold;
+    font-size: 0.86em;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+#nome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#qualificacao{
+    margin-top: -10px;
+    color: rgba(38, 116, 97, 0.707);
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    color: rgb(255, 255, 255);
+}
+#foot{
+    width: 100%;
+    background-color: rgba(73, 158, 138, 0.812);
+    padding: 10px 0;
+}
+#foot img{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 220px;
+    float: left;
+}
+#endereco{
+    margin-top: 30px;
+    width: 250px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-solid.fa-house{
+    margin-top: 58px;
+    font-size: 1.5em;
+    float: left;
+    margin-left: 150px;
+}
+#contato{
+    margin-top: 30px;
+    margin-left: 15px;
+    float: left;
+    width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-solid.fa-phone{
+    margin-top: 58px;
+    font-size: 1.5em;
+    float: left;
+}
+footer p{
+    margin-top: -10px;
+}
+footer pre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-brands.fa-instagram{
+    float: right;
+    font-size: 1.5em;
+}
+.fa-brands.fa-instagram:hover{
+    color: rgba(255, 255, 255, 0.671);
+}
+#final{
+    clear: both;
+    margin-top: 250px;
+    width: 70%;
+    margin-left:225px;
+}
+#foot h3 a:visited {
+    color: white !important;
+}
+@media screen and (max-width:1430px){
+    header div{
+        display: none;
+    }
+}
+@media screen and (max-width:1068) {
+    #Ibotao{
+    }
+    #botao1{
+        margin-top: 1000px;
+    }
+}
